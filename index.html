@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href="static/css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/startover">Technology Roadmapping</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/nsattiraju/Technology-Roadmapping/upload/master" target="_blank">Code</a>
+                    </li>
+                    <li><a href="https://sites.google.com/vt.edu/dbms-course-project/" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       <div class="container">
+            <h2><font color="#2a6496">Tech Road Map:</font> Explore the next technology</h2>
+            <br>
+            
+            <form name="main" action="/" method="Post">        
+            <table>
+                <tr>
+                    <td>Enter Technology:</td>
+                    <td><input type="text" size=80 name="urllink" placeholder="Ex. Cuda"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/startover">Reset And Start Over</a></td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>Select Case:</td>
+                    <td><input type="radio" name="case" value="lower" CHECKED> LowerCase  &nbsp;&nbsp;  
+                        <input type="radio" name="case" value="upper">  UpperCase</td>
+                </tr>
+               
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>Show Frequency: &nbsp;&nbsp;</td>
+                    <td><input type="radio" name="show_freq" value="yes" CHECKED> Yes &nbsp;&nbsp;
+                        <input type="radio" name="show_freq" value="no">  No</td>
+                </tr>
+                
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Explore Tech" ></td>
+            </table>
+            </form>
+            <hr>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <font color="RED" size="30px">{{ message }}</font>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        {% include 'wordcloud.html' %}        
+        <br><br><br>
+        <h4>Created and Developed by <a href="https://sites.google.com/vt.edu/dbms-course-project/" target="_blank">Group 7</a></h2>
+            
+   	 </div>
+
+</body>
+</html>
