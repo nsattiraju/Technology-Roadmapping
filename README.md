@@ -1,5 +1,5 @@
 # Technology-Roadmapping
-explore next upcoming technologies with the help of wrdcloud
+explore next upcoming technologies with the help of wordcloud
 
 
 Technology Roadmapping explores a technology background by collecting the words having most frequency from a webpage. The words are refined and processed before producing the output. The words with maximum frequency are shown in bigger font size as compared to those having less frequency. In addition to this it gives an sentiment analysis on each technological domain. 
