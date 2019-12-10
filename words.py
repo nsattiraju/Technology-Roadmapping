@@ -105,16 +105,7 @@ def index():
 </head>
 
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">          
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-     
-                </ul>
-            </div>
-        </div>
-    </nav>
-	<div class="navbar-header">
+    	<div class="navbar-header">
                 <h3>Sentiment Analysis on this technology</h3>
             </div>
 	<p>{{ name }}</p>
