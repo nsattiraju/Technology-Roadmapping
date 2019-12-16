@@ -15,3 +15,8 @@ C = 4
 K = float(freqTag - minFreq)/(maxFreq - minFreq)
 size = fontMin + (C*float(K*frange/C))
 ```
+## To run the project 
+1. Download the Github file as zip and extract the files and store in your local computer
+2. Install all the requirements mentioned in requirements.txt
+3. Run as python words.py in your terminal from the folder
+4. Copy the local host address and paster in the browser

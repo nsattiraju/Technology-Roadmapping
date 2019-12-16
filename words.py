@@ -28,7 +28,7 @@ def index():
 		case = request.form['case']
 		show_freq = request.form['show_freq']
 		
-		path = 'C:/Users/pavan/Desktop/pywordcloud-flask-master/wordcloud/'
+		path = 'wordcloud/'
 		extension = '.json'
 
 
